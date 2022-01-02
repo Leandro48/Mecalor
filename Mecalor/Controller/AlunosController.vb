@@ -1,10 +1,7 @@
-﻿Imports System.Data.OleDb
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 
 Public Class AlunosController
-    Dim adapter As New OleDbDataAdapter
     Dim sql As New SqlConnection(Conexao.conexao)
-    Dim data_adapter As SqlDataAdapter
 
     Public Sub cadastrar(matricula As Integer, nome As String, nascimento As Date, cpf As String, ativo As Boolean, curso As Integer)
 
@@ -33,6 +30,26 @@ Public Class AlunosController
         sql.Close()
     End Sub
 
+    Public Sub deletar(aluno_id As Integer)
+        Dim params() As SqlParameter = New SqlParameter() _
+        {
+            New SqlParameter("@aluno_id", SqlDbType.Int) With {.Value = aluno_id}
+        }
+
+        Dim command As New SqlCommand()
+        command.Connection = sql
+        command.CommandType = CommandType.StoredProcedure
+        command.CommandText = "TB_ALUNOS_DELETE"
+
+        command.Parameters.AddRange(params)
+
+        sql.Open()
+
+        command.ExecuteNonQuery()
+
+        sql.Close()
+
+    End Sub
     Public Sub load()
         Dim strSQL As String = "TB_ALUNOS_LISTAR"
         Dim dataAdapter As New SqlClient.SqlDataAdapter(strSQL, sql)

@@ -23,6 +23,28 @@ Public Class MateriasController
 
         sql.Close()
     End Sub
+
+    Public Sub deletar(materia_id As Integer)
+        Dim params() As SqlParameter = New SqlParameter() _
+        {
+            New SqlParameter("@materia_id", SqlDbType.Int) With {.Value = materia_id}
+        }
+
+        Dim command As New SqlCommand()
+        command.Connection = sql
+        command.CommandType = CommandType.StoredProcedure
+        command.CommandText = "TB_MATERIAS_DELETE"
+
+        command.Parameters.AddRange(params)
+
+        sql.Open()
+
+        command.ExecuteNonQuery()
+
+        sql.Close()
+
+    End Sub
+
     Public Sub load()
         Dim strSQL As String = "TB_MATERIAS_LISTAR"
         Dim dataAdapter As New SqlClient.SqlDataAdapter(strSQL, sql)

@@ -22,6 +22,7 @@ Partial Class Alunos
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NovoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,9 +44,25 @@ Partial Class Alunos
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewCheckBoxColumn1 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TBALUNOSLISTARBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DB_ESCOLADataSet1 = New Mecalor.DB_ESCOLADataSet()
+        Me.TBALUNOSLISTARBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TB_ALUNOS_LISTARTableAdapter1 = New Mecalor.DB_ESCOLADataSetTableAdapters.TB_ALUNOS_LISTARTableAdapter()
+        Me.TBALUNOSLISTARBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TBALUNOSLISTARBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DB_ESCOLADataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TBALUNOSLISTARBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TBALUNOSLISTARBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -53,7 +70,7 @@ Partial Class Alunos
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoToolStripMenuItem, Me.ExcluirToolStripMenuItem, Me.FecharToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1167, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -92,7 +109,7 @@ Partial Class Alunos
         Me.GroupBox1.Controls.Add(Me.MetroLabel3)
         Me.GroupBox1.Controls.Add(Me.MetroLabel2)
         Me.GroupBox1.Controls.Add(Me.MetroLabel1)
-        Me.GroupBox1.Location = New System.Drawing.Point(224, 167)
+        Me.GroupBox1.Location = New System.Drawing.Point(658, 168)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(497, 244)
         Me.GroupBox1.TabIndex = 4
@@ -225,17 +242,86 @@ Partial Class Alunos
         '
         'DataGridView1
         '
+        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewCheckBoxColumn1, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.DataGridView1.DataSource = Me.TBALUNOSLISTARBindingSource2
         Me.DataGridView1.Location = New System.Drawing.Point(12, 27)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(776, 411)
         Me.DataGridView1.TabIndex = 1
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "aluno_id"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "aluno_id"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "aluno_matricula"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "aluno_matricula"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "aluno_nome"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "aluno_nome"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "aluno_dat_nascimento"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "aluno_dat_nascimento"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewCheckBoxColumn1
+        '
+        Me.DataGridViewCheckBoxColumn1.DataPropertyName = "aluno_ativo"
+        Me.DataGridViewCheckBoxColumn1.HeaderText = "aluno_ativo"
+        Me.DataGridViewCheckBoxColumn1.Name = "DataGridViewCheckBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "aluno_cpf"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "aluno_cpf"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "curso_id"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "curso_id"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'TBALUNOSLISTARBindingSource1
+        '
+        Me.TBALUNOSLISTARBindingSource1.DataMember = "TB_ALUNOS_LISTAR"
+        Me.TBALUNOSLISTARBindingSource1.DataSource = Me.DB_ESCOLADataSet1
+        '
+        'DB_ESCOLADataSet1
+        '
+        Me.DB_ESCOLADataSet1.DataSetName = "DB_ESCOLADataSet"
+        Me.DB_ESCOLADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TBALUNOSLISTARBindingSource
+        '
+        Me.TBALUNOSLISTARBindingSource.DataMember = "TB_ALUNOS_LISTAR"
+        '
+        'TB_ALUNOS_LISTARTableAdapter1
+        '
+        Me.TB_ALUNOS_LISTARTableAdapter1.ClearBeforeFill = True
+        '
+        'TBALUNOSLISTARBindingSource2
+        '
+        Me.TBALUNOSLISTARBindingSource2.DataMember = "TB_ALUNOS_LISTAR"
+        Me.TBALUNOSLISTARBindingSource2.DataSource = Me.DB_ESCOLADataSet1
+        '
         'Alunos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1167, 450)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -247,6 +333,10 @@ Partial Class Alunos
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TBALUNOSLISTARBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DB_ESCOLADataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TBALUNOSLISTARBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TBALUNOSLISTARBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -273,4 +363,25 @@ Partial Class Alunos
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DB_ESCOLADataSet As DB_ESCOLADataSet
+    Friend WithEvents TBALUNOSLISTARBindingSource As BindingSource
+    Friend WithEvents TB_ALUNOS_LISTARTableAdapter As DB_ESCOLADataSetTableAdapters.TB_ALUNOS_LISTARTableAdapter
+    Friend WithEvents AlunoidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AlunomatriculaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AlunonomeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AlunodatnascimentoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AlunoativoDataGridViewCheckBoxColumn As DataGridViewCheckBoxColumn
+    Friend WithEvents AlunocpfDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CursoidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DB_ESCOLADataSet1 As DB_ESCOLADataSet
+    Friend WithEvents TBALUNOSLISTARBindingSource1 As BindingSource
+    Friend WithEvents TB_ALUNOS_LISTARTableAdapter1 As DB_ESCOLADataSetTableAdapters.TB_ALUNOS_LISTARTableAdapter
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewCheckBoxColumn1 As DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents TBALUNOSLISTARBindingSource2 As BindingSource
 End Class
