@@ -22,5 +22,295 @@ Mecalor
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:Mecalor.DB_ESCOLADataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_AlunosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_CursosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_MateriasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_NotasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_CONSULTAR_IDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_LISTARDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_CONSULTAR_IDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_LISTARDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_CONSULTAR_IDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_LISTARDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_CONSULTAR_IDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_LISTARDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_AlunosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_CursosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_MateriasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_NotasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_CONSULTAR_IDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_LISTARRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_CONSULTAR_IDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_LISTARRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_CONSULTAR_IDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_LISTARRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_CONSULTAR_IDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_LISTARRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_AlunosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_CursosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_MateriasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.tb_NotasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_CONSULTAR_IDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_ALUNOS_LISTARRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_CONSULTAR_IDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_CURSOS_LISTARRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_CONSULTAR_IDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_MATERIAS_LISTARRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_CONSULTAR_IDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSet.TB_NOTAS_LISTARRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.tb_AlunosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.tb_CursosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.tb_MateriasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.tb_NotasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_ALUNOS_CONSULTAR_IDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_ALUNOS_LISTARTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_CURSOS_CONSULTAR_IDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_CURSOS_LISTARTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_MATERIAS_CONSULTAR_IDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_MATERIAS_LISTARTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_NOTAS_CONSULTAR_IDTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TB_NOTAS_LISTARTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Mecalor.DB_ESCOLADataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Mecalor.DB_ESCOLADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Mecalor.DB_ESCOLADataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.UpdateAll(Mecalor.DB_ESCOLADataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Mecalor.DB_ESCOLADataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

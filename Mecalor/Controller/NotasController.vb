@@ -3,9 +3,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class NotasController
-    Dim adapter As New OleDbDataAdapter
     Dim sql As New SqlConnection(Conexao.conexao)
-    Dim da_sp As SqlDataAdapter
     Public Sub cadastrar(aluno As Integer, materia As Integer, data As Date, nota As Decimal)
 
         Dim params() As SqlParameter = New SqlParameter() _
@@ -29,6 +27,27 @@ Public Class NotasController
         command.ExecuteNonQuery()
 
         sql.Close()
+    End Sub
+
+    Public Sub deletar(nota_id As Integer)
+        Dim params() As SqlParameter = New SqlParameter() _
+        {
+            New SqlParameter("@nota_id", SqlDbType.Int) With {.Value = nota_id}
+        }
+
+        Dim command As New SqlCommand()
+        command.Connection = sql
+        command.CommandType = CommandType.StoredProcedure
+        command.CommandText = "TB_NOTAS_DELETE"
+
+        command.Parameters.AddRange(params)
+
+        sql.Open()
+
+        command.ExecuteNonQuery()
+
+        sql.Close()
+
     End Sub
 
     Public Sub load()

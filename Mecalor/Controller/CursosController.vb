@@ -23,11 +23,33 @@ Public Class CursosController
 
         sql.Close()
     End Sub
+
+    Public Sub deletar(curso_id As Integer)
+        Dim params() As SqlParameter = New SqlParameter() _
+        {
+            New SqlParameter("@curso_id", SqlDbType.Int) With {.Value = curso_id}
+        }
+
+        Dim command As New SqlCommand()
+        command.Connection = sql
+        command.CommandType = CommandType.StoredProcedure
+        command.CommandText = "TB_CURSOS_DELETE"
+
+        command.Parameters.AddRange(params)
+
+        sql.Open()
+
+        command.ExecuteNonQuery()
+
+        sql.Close()
+
+    End Sub
+
     Public Sub load()
         Dim strSQL As String = "TB_CURSOS_LISTAR"
         Dim dataAdapter As New SqlClient.SqlDataAdapter(strSQL, sql)
         Dim table As New DataTable
         dataAdapter.Fill(table)
-        Cursos.DataGridView1.DataSource = table
+        Notas.DataGridView1.DataSource = table
     End Sub
 End Class
